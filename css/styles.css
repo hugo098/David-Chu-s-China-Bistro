@@ -143,8 +143,47 @@ body {
 	color: #fff;
 	opacity: .8;
 }
+#footer .container-fluid .row{
+	width: 100%;
+	margin: 0;
+}
 
+#footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0;
+}
 
+#footer div.row{
+	margin-bottom: 35px;
+}
+
+#hours, #address{
+	line-height: 2;
+}
+
+#hours > span, #address > span{
+	font-size: 1.3em;
+}
+
+#address p{
+	color: #557c3e;
+	font-size: .8em;
+	line-height: 1.8;
+}
+
+#testimonials{
+	font-style: italic;
+}
+#testimonials p:nth-child(2){
+	margin-top: 25px;
+}
+
+#copy{
+	margin-top: 20px;
+}
 
 /*****************Large devices only***********************/
 
@@ -203,6 +242,11 @@ body {
 	.tile-wrap-3{
 		padding-right: 0;
 		padding-left: 24px;
+	}
+
+	#footer{
+		width: 100%;
+		text-align: center;
 	}
 
 }
