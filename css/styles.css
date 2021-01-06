@@ -92,31 +92,58 @@ body {
 }
 /*****************Header ends*****************/
 
+
+.jumbotron{  	
+    	margin-bottom: 10px;
+    	height: auto;
+    	box-shadow: 0 0 50px #3f0c1f;
+    	border:2px solid #3f0c1f;   	
+    	
+    }
 /*****************Large devices only***********************/
 
 @media(min-width: 1200px) {
 
 	/*****************Header starts*****************/
     #navbarNav {
-        justify-content: center;
+        justify-content: flex-end;
     }
     #header-nav .container-fluid {
         display: flex;
         align-items: flex-start !important;
+
     }
     #header-nav .container-fluid .navbar-header {
         display: flex;
         align-items: flex-start !important;
-        justify-content: flex-end !important;
+        justify-content: flex-start !important;
         padding-right: 0px;
     }
     #header-nav .container-fluid {
-        width: 100% !important;
+       	width: 90%;
+       	max-width: 1200px;
         display: flex;
-        justify-content: center !important;
+        justify-content: flex-end !important;
         margin: 0px 0px 2px 0px;
+        padding-left: 0px;        
+    }
+
+    #header-nav{
+    	display: flex;
+    	justify-content: center;
+        
     }
     /*****************Header ends*****************/
+
+    #main-content{
+    	padding: 0;
+    }
+    .jumbotron{    	
+    	width: 90%;    	
+    	max-width: 1200px;
+    	height: auto;  		
+    }
+
 }
 /*****************Medium devices only***********************/
 
@@ -129,22 +156,63 @@ body {
         margin: 5px 5px 5px 0 !important;
     }
     #navbarNav {
-        justify-content: center;
+        justify-content: flex-end;
+    }
+
+     #header-nav .container-fluid {
+        display: flex;
+        align-items: flex-start !important;
+
     }
     #header-nav .container-fluid .navbar-header {
         display: flex;
         align-items: flex-start !important;
+        justify-content: flex-start !important;
+        padding-right: 0px;
+    }
+    #header-nav .container-fluid {
+       	width: 95%;
+       	max-width: 992px;
+        display: flex;
         justify-content: flex-end !important;
-        padding-right: 30px;
+        margin: 0px 0px 2px 0px;
+        padding-left: 0px;        
+    }
+
+    #header-nav{
+    	display: flex;
+    	justify-content: center;
+        
     }
     /*****************Header ends*****************/
-}
-/*****************Small devices only***********************/
 
+    /*****************Main contents starts*****************/
+    #main-content{
+    	padding: 0;
+    }
+    .jumbotron{    	 	
+    	width: 95%;
+    	max-width: 992px; 	
+    }
+    /*****************Main contents ends*****************/
+}
+
+/*****************Small devices only***********************/
 @media(min-width: 768px) and (max-width: 991px) {
 	/*****************Header starts*****************/
+    div.navbar-header{
+    	padding-right: 0;
+    }
+
+    div.navbar-brand{
+    	padding-right: 0;
+    }
+    #nav-list { /*Nav menu*/
+	    margin-top: 10px;
+	    margin-right: -5px;
+	}
     #navbarNav {
-        justify-content: center;
+        justify-content: flex-end;
     }
     #nav-list a {
         color: #951c49;
@@ -218,7 +286,7 @@ body {
     #call-btn>a {
         font-size: 1.5em;
         display: block;
-        margin: 0 20px;
+        margin: 0 12px;
         padding: 10px;
         border: 2px solid #fff;
         background-color: #f6b319;
@@ -232,4 +300,7 @@ body {
     }
     /*****************sm phone button ends*****************/
 
+    .jumbotron{
+    	margin-top: 30px;
+    }
 }
